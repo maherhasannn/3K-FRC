@@ -188,8 +188,8 @@
                             <option selected>Quick Search</option>
                             <option value="1">What is a Notice of Default? </option>
                             <option value="2">What is a Notice of Trustee Sale?</option>
-                            <option value="3">What are my rights?</option>
-                            <option value="4">other questions... i can add to this later</option>
+                            <option value="3">What are my Rights?</option>
+                            <!-- <option value="4">other questions... i can add to this later</option> -->
                         </select>
                     </div>
                     <div class="col-md-2 d-flex justify-content-end">
@@ -204,9 +204,14 @@
             document.getElementById('searchButton').addEventListener('click', function() {
                 var selectedValue = document.getElementById('propertyTypeDropdown').value;
                 if (selectedValue == "1") {
-                    window.location.href = "about.html";
+                    window.location.href = "NOD.html";
                 }
-                // Add more conditions here if needed for other property types
+                if (selectedValue == "2") {
+                    window.location.href = "NOT.html";
+                }
+                if (selectedValue == "3") {
+                    window.location.href = "RIGHTS.html";
+                }
             });
         </script>
 

@@ -106,38 +106,44 @@
         <!-- Header End -->
 
 
-                <!-- Search Start -->
-                <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-                    <div class="container">
-                        <div class="row g-2">
-                            <div class="col-md-10 d-flex">
-                                <!-- Property Type Dropdown -->
-                                <select id="propertyTypeDropdown" class="form-select border-0 py-3">
-                                    <option selected>Quick Search</option>
-                                    <option value="1">Property Type 1</option>
-                                    <option value="2">Property Type 2</option>
-                                    <option value="3">Property Type 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2 d-flex justify-content-end">
-                                <!-- Search Button -->
-                                <button id="searchButton" class="btn btn-dark border-0 w-100 py-3">Search</button>
-                            </div>
-                        </div>
+                        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10 d-flex">
+                        <!-- Property Type Dropdown -->
+                        <select id="propertyTypeDropdown" class="form-select border-0 py-3">
+                            <option selected>Quick Search</option>
+                            <option value="1">What is a Notice of Default? </option>
+                            <option value="2">What is a Notice of Trustee Sale?</option>
+                            <option value="3">What are my Rights?</option>
+                            <!-- <option value="4">other questions... i can add to this later</option> -->
+                        </select>
+                    </div>
+                    <div class="col-md-2 d-flex justify-content-end">
+                        <!-- Search Button -->
+                        <button id="searchButton" class="btn btn-dark border-0 w-100 py-3">Search</button>
                     </div>
                 </div>
-                
-                <script>
-                    document.getElementById('searchButton').addEventListener('click', function() {
-                        var selectedValue = document.getElementById('propertyTypeDropdown').value;
-                        if (selectedValue == "1") {
-                            window.location.href = "about.html";
-                        }
-                        // Add more conditions here if needed for other property types
-                    });
-                </script>
+            </div>
+        </div>
         
-                <!--Search End-->
+        <script>
+            document.getElementById('searchButton').addEventListener('click', function() {
+                var selectedValue = document.getElementById('propertyTypeDropdown').value;
+                if (selectedValue == "1") {
+                    window.location.href = "NOD.html";
+                }
+                if (selectedValue == "2") {
+                    window.location.href = "NOT.html";
+                }
+                if (selectedValue == "3") {
+                    window.location.href = "RIGHTS.html";
+                }
+            });
+        </script>
+
+        <!--Search End-->
 
 
         <!-- About Start -->
